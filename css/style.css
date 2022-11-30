@@ -817,7 +817,7 @@ footer .followUS i {
     .imageHead {
         background-image: url(../img/lacar-home.jpeg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 200% 100%;
         background-position: center;
         background-attachment: fixed;
         height: 100vh;
