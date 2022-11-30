@@ -817,10 +817,10 @@ footer .followUS i {
     .imageHead {
         background-image: url(../img/lacar-home.jpeg);
         background-repeat: no-repeat;
-        background-size: 200% 100%;
+        background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        height: 100vh;
+        /* height: 100vh; */
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
