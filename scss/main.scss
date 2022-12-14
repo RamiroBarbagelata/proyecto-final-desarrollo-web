@@ -32,96 +32,9 @@
 /* Winter Page */
 @import "./pages/winter";
 
-/* Winter Section */
-
-/* Table Price Winter */
-
-.tablePriceSection {
-    width: 80vw;
-    padding: 20px;
-    margin-left: 150px;
-}
-
-.tablePrice {
-    padding: 25px;
-    border: solid 1px $primary-color;
-    margin: 40px;
-    text-align: center;
-}
-
-.tableHead tr th {
-    padding-left: 50px;
-    padding-right: 50px;
-    border: solid 1px $primary-color;
-}
-
 /* Contact Us Section */
+@import "./pages/contact";
 
-.contactSection h2 {
-    width: 80vw;
-    padding: 20px;
-    padding-top: 150px;
-    margin-left: 120px;
-}
-
-.formSection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.formSection img {
-    width: 700px;
-    margin-left: 180px;
-    border-radius: 10px;
-}
-
-.formSection .nameForm {
-    width: 500px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid 1px $border-form;
-    padding-left: 20px;
-    margin-bottom: 15px;
-}
-
-.formSection .nameEmail {
-    width: 500px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid 1px $border-form;
-    padding-left: 20px;
-    margin-bottom: 15px;
-}
-
-.formSection .namePhone {
-    width: 500px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid 1px $border-form;
-    padding-left: 20px;
-    margin-bottom: 15px;
-}
-
-.formSection .nameText {
-    width: 500px;
-    height: 300px;
-    border-radius: 5px;
-    border: solid 1px $border-form;
-    padding-left: 20px;
-    padding-top: 10px;
-    margin-bottom: 15px;
-}
-
-.formSection .nameSend {
-    width: 500px;
-    height: 50px;
-    border-radius: 5px;
-    border: solid 1px $border-form;
-    color: $secondary-color;
-    background-color: $primary-color;
-    font-size: 1rem;
-}
 
 /* Tablet */
 

@@ -1,0 +1,71 @@
+.contactSection{
+    background-image: url(../img/san-martin-winter.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        padding-top: 150px;
+    }
+    .formSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nameForm {
+        width: 500px;
+        height: 40px;
+        border-radius: 5px;
+        border: solid 1px $border-form;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+    .nameEmail {
+        width: 500px;
+        height: 40px;
+        border-radius: 5px;
+        border: solid 1px $border-form;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+    .namePhone {
+        width: 500px;
+        height: 40px;
+        border-radius: 5px;
+        border: solid 1px $border-form;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+    .nameText {
+        width: 500px;
+        height: 300px;
+        border-radius: 5px;
+        border: solid 1px $border-form;
+        padding-left: 20px;
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+    .nameSend {
+        width: 500px;
+        height: 50px;
+        border-radius: 5px;
+        border: solid 1px $border-form;
+        color: $secondary-color;
+        background-color: $primary-color;
+        font-size: 1rem;
+        transition-timing-function: ease-in;
+        transition-duration: 0.3s;
+        &:hover{
+            color: $primary-color;
+            background-color: $secondary-color;
+            transform: scale(1.04);
+        }
+    }
+} 

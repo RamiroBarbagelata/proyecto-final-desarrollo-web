@@ -54,6 +54,7 @@ header .collapse a:hover {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -118,7 +119,7 @@ header .collapse a:hover {
 .more:hover {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-  transform: scale(1.04);
+  transform: scale(1.1);
 }
 
 /* Section Discover Home */
@@ -276,6 +277,7 @@ footer .footer-botton .followUS i {
 }
 footer .footer-botton .followUS i:hover {
   color: rgb(22, 206, 132);
+  transform: scale(1.04);
 }
 
 /* City Page */
@@ -438,6 +440,7 @@ footer .footer-botton .followUS i:hover {
 }
 .ski-photo img {
   width: 80%;
+  border-radius: 10px;
 }
 
 .ski-description {
@@ -451,6 +454,7 @@ footer .footer-botton .followUS i:hover {
 }
 .snowboard-photo img {
   width: 80%;
+  border-radius: 10px;
 }
 
 .snowboard-description {
@@ -466,48 +470,35 @@ footer .footer-botton .followUS i:hover {
   grid-template-areas: "video-description video-youtube" "photo-ski description-ski" "description-snowboard photo-snowboard";
 }
 
-/* Winter Section */
-/* Table Price Winter */
-.tablePriceSection {
-  width: 80vw;
-  padding: 20px;
-  margin-left: 150px;
-}
-
-.tablePrice {
-  padding: 25px;
-  border: solid 1px rgb(0, 0, 0);
-  margin: 40px;
-  text-align: center;
-}
-
-.tableHead tr th {
-  padding-left: 50px;
-  padding-right: 50px;
-  border: solid 1px rgb(0, 0, 0);
+.table-price {
+  margin-top: 30px;
+  padding: 40px;
 }
 
 /* Contact Us Section */
-.contactSection h2 {
-  width: 80vw;
-  padding: 20px;
-  padding-top: 150px;
-  margin-left: 120px;
+.contactSection {
+  background-image: url(../img/san-martin-winter.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.formSection {
+.contactSection h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  padding-top: 150px;
+}
+.contactSection .formSection {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.formSection img {
-  width: 700px;
-  margin-left: 180px;
-  border-radius: 10px;
-}
-
-.formSection .nameForm {
+.contactSection .nameForm {
   width: 500px;
   height: 40px;
   border-radius: 5px;
@@ -515,8 +506,7 @@ footer .footer-botton .followUS i:hover {
   padding-left: 20px;
   margin-bottom: 15px;
 }
-
-.formSection .nameEmail {
+.contactSection .nameEmail {
   width: 500px;
   height: 40px;
   border-radius: 5px;
@@ -524,8 +514,7 @@ footer .footer-botton .followUS i:hover {
   padding-left: 20px;
   margin-bottom: 15px;
 }
-
-.formSection .namePhone {
+.contactSection .namePhone {
   width: 500px;
   height: 40px;
   border-radius: 5px;
@@ -533,8 +522,7 @@ footer .footer-botton .followUS i:hover {
   padding-left: 20px;
   margin-bottom: 15px;
 }
-
-.formSection .nameText {
+.contactSection .nameText {
   width: 500px;
   height: 300px;
   border-radius: 5px;
@@ -543,8 +531,7 @@ footer .footer-botton .followUS i:hover {
   padding-top: 10px;
   margin-bottom: 15px;
 }
-
-.formSection .nameSend {
+.contactSection .nameSend {
   width: 500px;
   height: 50px;
   border-radius: 5px;
@@ -552,6 +539,13 @@ footer .footer-botton .followUS i:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   font-size: 1rem;
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+}
+.contactSection .nameSend:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.04);
 }
 
 /* Tablet */
