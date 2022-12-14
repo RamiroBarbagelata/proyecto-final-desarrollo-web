@@ -1,0 +1,40 @@
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: rgba(195, 0, 0, 0.2);
+    padding: 20px 150px;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+        font-size: 2rem;
+        display: none;
+    }
+    .smaLogo {
+        width: 130px;
+        margin-left: 50px;
+    }
+    ul {
+        display: flex;
+        gap: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .collapse {
+        margin-right: 50px;
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            transition-timing-function: ease-in;
+            transition-duration: 0.3s;
+            &:hover {
+                color: $green-color;
+            }
+        }
+    }
+}

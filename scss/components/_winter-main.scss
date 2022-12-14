@@ -1,0 +1,45 @@
+.video {
+    grid-area: video-youtube;
+    iframe{
+        width: 100%;
+    }
+}
+.video-description {
+    grid-area: video-description;
+    align-self: center;
+    width: 80%;
+}
+
+
+.ski-photo{
+    grid-area: photo-ski;
+    img{
+        width: 80%;
+    }
+}
+.ski-description{
+    grid-area: description-ski;
+    align-self: center;
+    width: 80%;
+}
+.snowboard-photo{
+    grid-area: photo-snowboard;
+    img{
+        width: 80%;
+    }
+}
+.snowboard-description{
+    grid-area: description-snowboard;
+    align-self: center;
+    width: 80%;
+}
+
+.winter-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "video-description video-youtube"
+        "photo-ski description-ski"
+        "description-snowboard photo-snowboard";
+}

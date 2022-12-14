@@ -1,0 +1,536 @@
+@import "./utils/variables";
+@import "./base/base";
+
+/* header desktop */
+@import "./components/header";
+
+/* Image Home Desktop */
+@import "./components/image-home";
+
+/* first paragraph*/
+@import "./components/intro-home";
+
+/* More Button */
+@import "./components/more-botton";
+
+/* Section Discover Home */
+@import "./components/cards-home";
+
+/* Footer */
+@import "./components/footer-line";
+@import "./components/footer";
+
+/* City Page */
+@import "./pages/city";
+
+/* Tours Page */
+@import "./pages/tours";
+
+/* Summer Page */
+@import "./pages/summer";
+
+/* Winter Page */
+@import "./pages/winter";
+
+/* Winter Section */
+
+/* Table Price Winter */
+
+.tablePriceSection {
+    width: 80vw;
+    padding: 20px;
+    margin-left: 150px;
+}
+
+.tablePrice {
+    padding: 25px;
+    border: solid 1px $primary-color;
+    margin: 40px;
+    text-align: center;
+}
+
+.tableHead tr th {
+    padding-left: 50px;
+    padding-right: 50px;
+    border: solid 1px $primary-color;
+}
+
+/* Contact Us Section */
+
+.contactSection h2 {
+    width: 80vw;
+    padding: 20px;
+    padding-top: 150px;
+    margin-left: 120px;
+}
+
+.formSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formSection img {
+    width: 700px;
+    margin-left: 180px;
+    border-radius: 10px;
+}
+
+.formSection .nameForm {
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px $border-form;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.formSection .nameEmail {
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px $border-form;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.formSection .namePhone {
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px $border-form;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.formSection .nameText {
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    border: solid 1px $border-form;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.formSection .nameSend {
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    border: solid 1px $border-form;
+    color: $secondary-color;
+    background-color: $primary-color;
+    font-size: 1rem;
+}
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+    .imageHead h2 {
+        color: $third-color;
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .discover-intro h2 {
+        text-align: center;
+        padding: 20px 50px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .discover-cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 0px;
+        gap: 25px;
+    }
+
+    .discover-card {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        height: 500px;
+        background-color: $card-color;
+        border-radius: 20px;
+        transition-timing-function: ease-in;
+        transition-duration: 0.3s;
+    }
+
+    .discover-card h3 {
+        margin-top: 5px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .discover-card p {
+        margin-top: 10px;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        .footer-top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            .explore {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                h3 {
+                    display: flex;
+                    align-self: center;
+                    margin-bottom: 30px;
+                }
+                .list {
+                    display: flex;
+                    margin-left: 0px;
+                    gap: 20px;
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+        .footer-botton {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            .subscribe {
+                h3 {
+                    display: flex;
+                    align-self: center;
+                    margin-bottom: 30px;
+                }
+                .input-box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    align-self: center;
+                    gap: 10px;
+                }
+            }
+
+            .yourEmail {
+                display: block;
+                width: 250px;
+                height: 30px;
+                border-radius: 5px;
+                border: solid 1px rgb(73, 73, 73);
+                padding-left: 5px;
+            }
+
+            .suscribeButton {
+                width: 250px;
+                height: 30px;
+                border-radius: 5px;
+                border: solid 1px rgb(73, 73, 73);
+                margin-top: 10px;
+                color: $secondary-color;
+                background-color: $primary-color;
+                transition-timing-function: ease-in;
+                transition-duration: 0.3s;
+                &:hover {
+                    transform: scale(1.04);
+                    color: $primary-color;
+                    background-color: $secondary-color;
+                }
+            }
+            .input-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                align-self: center;
+                gap: 20px;
+            }
+            .followUS {
+                h3 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-self: center;
+                    padding-left: 0px;
+                }
+                .socials {
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 60px;
+                }
+                i {
+                    padding-left: 0px;
+                    font-size: 25px;
+
+                    &:hover {
+                        color: $green-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    .imageHead {
+        background-image: url(../img/lacar-home.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .imageHead h2 {
+        color: $third-color;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    .discover-cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 10px 10px;
+        gap: 25px;
+    }
+
+    .imageHead .btn-know-more {
+        color: $primary-color;
+        background-color: $third-color;
+        padding: 8px 28px;
+        font-size: 1rem;
+        font-weight: 500;
+        border: 2px solid $third-color;
+        border-radius: 50px;
+        margin-bottom: 120px;
+        width: 250px;
+        transition-timing-function: ease-in;
+        transition-duration: 0.3s;
+    }
+
+    .discover-intro h2 {
+        padding: 5px 0px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .discover-intro p {
+        text-align: justify;
+        padding: 20px 0px;
+        font-size: 1.2rem;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        .footer-top {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            .explore {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3 {
+                    display: flex;
+                    align-self: center;
+                    margin-bottom: 30px;
+                }
+                .list {
+                    display: flex;
+                    margin-left: 0px;
+                    gap: 20px;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+                    margin-bottom: 60px;
+                }
+            }
+            .container-contact {
+                .contact {
+                    display: flex;
+                    flex-direction: column;
+                    h3 {
+                        display: flex;
+                        align-self: center;
+                        margin-left: 0px;
+                        margin-bottom: 30px;
+                    }
+                    .info {
+                        .address {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-botton {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            padding: 40px;
+
+            .subscribe {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3 {
+                    display: flex;
+                    align-self: center;
+                }
+                .input-box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    align-self: center;
+                    gap: 20px;
+                }
+            }
+            .followUS {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                h3 {
+                    display: flex;
+                    align-self: center;
+                    padding-left: 0px;
+                }
+                .socials {
+                    display: flex;
+                    justify-content: space-evenly;
+                    gap: 0px;
+                }
+                i {
+                    padding-left: 0px;
+                    font-size: 20px;
+                    padding: 25px;
+
+                    &:hover {
+                        color: $green-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .imageHeadCity {
+        background-image: url(../img/sma-city.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .imageHeadCity h2 {
+        color: $third-color;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .imageHeadSummer {
+        background-image: url(../img/quila-quina-playa.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .imageHeadSummer h2 {
+        color: $third-color;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .imageHeadWinter {
+        background-image: url(../img/chapelco-big.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .imageHeadWinter h2 {
+        color: $third-color;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .imageHeadTours {
+        background-image: url(../img/la-islita-photo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .imageHeadTours h2 {
+        color: $third-color;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}

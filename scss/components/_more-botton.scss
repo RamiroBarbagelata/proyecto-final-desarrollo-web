@@ -1,0 +1,14 @@
+.more {
+    border: 2px solid $primary-color;
+    border-radius: 50px;
+    padding: 8px 28px;
+    font-weight: 600;
+    margin-top: 30px;
+    transition-timing-function: ease-in;
+    transition-duration: 0.3s;
+    &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+        transform: scale(1.04);
+    }
+}

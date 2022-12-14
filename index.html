@@ -56,7 +56,7 @@
     <!-- Main -->
     <main>
         <section class="imageHead container">
-            <div class="row">
+            <div class="imageHead__row">
                 <h2 class="img-title text-center"><span class="firstLineTitle">EXPLORA UNA</span> ALDEA DE MONTAÑA</h2>
                 <div class="d-flex justify-content-center">
                     <a class="btn btn-know-more text-center btn-lg" href="">CONOCE MÁS</a>
@@ -198,11 +198,13 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container container-footer">
-            <div class="explore d-flex flex-column align-items-center p-4">
+        <div class="line-separate container">
+        </div>
+        <div class="footer-top container">
+            <div class="explore">
                 <h3>Explorá</h3>
                 <div>
-                    <ul class="d-flex justify-content-around">
+                    <ul class="list">
                         <li>Inicio</li>
                         <li>Ciudad</li>
                         <li>Paseos</li>
@@ -212,29 +214,48 @@
                 </div>
             </div>
 
-            <div class="contact d-flex flex-column align-items-center p-4">
-                <h3>Contactanos</h3>
-                <p>87238723</p>
-                <p>Calle 8282</p>
-                <p>mail@mail.com</p>
+            <div class="container container-contact">
+                <div class="contact">
+                    <h3>Contactanos</h3>
+                    <div class="info">
+                        <div class="address">
+                            <p>+54 2972 563429</p>
+                            <p>Av. San Martín 800</p>
+                            <p class="mail">turismo@smandes.gov.ar</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+        </div>
+
+        <div class="line-separate container">
+        </div>
+        <div class="footer-center container">
 
             <div class="maps p-4">
-                <iframe
+                <iframe class="googlemaps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2186.3005064809586!2d-71.35245715571853!3d-40.15724595823817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110e714c4b184f%3A0xf821f43c23103bfa!2sOficina%20de%20Turismo!5e0!3m2!1ses-419!2sar!4v1667931979836!5m2!1ses-419!2sar"
-                    width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </div>
 
+        <div class="line-separate container">
+        </div>
+
+        <div class="footer-botton container">
             <div class="subscribe d-flex flex-column align-items-center p-4">
                 <h3>Suscribité</h3>
-                <input class="yourEmail" type="email" name="email" id="e_mail" placeholder="Ingresa tu email...">
-                <input class="suscribeButton" type="submit" value="Suscribite">
+                <div class="input-box">
+                    <input class="yourEmail" type="email" name="email" id="e_mail" placeholder="Ingresa tu email...">
+                    <input class="suscribeButton" type="submit" value="Suscribite">
+                </div>
             </div>
 
             <div class="followUS p-4">
                 <h3 class="text-center">Seguinos</h3>
-                <div class="d-flex justify-content-around fs-5">
+                <div class="socials fs-5">
                     <i class="bi bi-instagram"></i>
                     <i class="bi bi-facebook"></i>
                     <i class="bi bi-twitter"></i>

@@ -1,0 +1,112 @@
+footer {
+    .footer-top {
+        display: flex;
+        padding: 40px;
+        .explore {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            align-content: center;
+            h3 {
+                display: flex;
+                align-self: flex-start;
+            }
+            .list {
+                display: flex;
+                margin-left: -30px;
+                gap: 20px;
+            }
+        }
+        .container-contact .contact {
+            h3 {
+                display: flex;
+                align-self: flex-start;
+                margin-left: 165px;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            align-content: center;
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .address {
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+    .maps {
+        .googlemaps {
+            width: 100%;
+        }
+    }
+
+    .footer-botton {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 40px;
+        .subscribe {
+            h3 {
+                display: flex;
+                align-self: flex-start;
+            }
+        }
+        .yourEmail {
+            display: block;
+            width: 250px;
+            height: 30px;
+            border-radius: 5px;
+            border: solid 1px rgb(73, 73, 73);
+            padding-left: 5px;
+        }
+        .suscribeButton {
+            width: 250px;
+            height: 30px;
+            border-radius: 5px;
+            border: solid 1px rgb(73, 73, 73);
+            margin-top: 10px;
+            color: $secondary-color;
+            background-color: $primary-color;
+            transition-timing-function: ease-in;
+            transition-duration: 0.3s;
+            &:hover {
+                transform: scale(1.04);
+                color: $primary-color;
+                background-color: $secondary-color;
+            }
+        }
+        .input-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            gap: 20px;
+        }
+        .followUS {
+            h3 {
+                display: flex;
+                align-self: flex-start;
+                padding-left: 80px;
+            }
+            .socials {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            i {
+                padding-left: 80px;
+                font-size: 25px;
+                &:hover {
+                    color: $green-color;
+                }
+            }
+        }
+    }
+}
