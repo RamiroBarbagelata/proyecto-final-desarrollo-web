@@ -32,3 +32,26 @@
         }
     }
 }
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    .imageHeadWinter {
+        background-image: url(../img/chapelco-big.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        h2 {
+            color: $third-color;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    }
+}

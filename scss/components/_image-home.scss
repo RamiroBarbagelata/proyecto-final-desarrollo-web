@@ -32,3 +32,48 @@
         }
     }
 }
+/* Tablet */
+@media (max-width: 1200px) {
+    .imageHead {
+        h2 {
+            color: $third-color;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .imageHead {
+        background-image: url(../img/lacar-home.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        h2 {
+            color: $third-color;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        .btn-know-more {
+            color: $primary-color;
+            background-color: $third-color;
+            padding: 8px 28px;
+            font-size: 1rem;
+            font-weight: 500;
+            border: 2px solid $third-color;
+            border-radius: 50px;
+            margin-bottom: 120px;
+            width: 250px;
+            transition-timing-function: ease-in;
+            transition-duration: 0.3s;
+        }
+    }
+}

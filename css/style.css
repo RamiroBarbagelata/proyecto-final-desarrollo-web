@@ -44,7 +44,7 @@ header .collapse a {
   transition-duration: 0.3s;
 }
 header .collapse a:hover {
-  color: rgb(22, 206, 132);
+  color: #01bba9;
 }
 
 /* Image Home Desktop */
@@ -83,6 +83,48 @@ header .collapse a:hover {
   border: 2px solid rgb(237, 237, 237);
 }
 
+/* Tablet */
+@media (max-width: 1200px) {
+  .imageHead h2 {
+    color: rgb(237, 237, 237);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+}
+/* Mobile */
+@media (max-width: 576px) {
+  .imageHead {
+    background-image: url(../img/lacar-home.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .imageHead h2 {
+    color: rgb(237, 237, 237);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  .imageHead .btn-know-more {
+    color: rgb(0, 0, 0);
+    background-color: rgb(237, 237, 237);
+    padding: 8px 28px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid rgb(237, 237, 237);
+    border-radius: 50px;
+    margin-bottom: 120px;
+    width: 250px;
+    transition-timing-function: ease-in;
+    transition-duration: 0.3s;
+  }
+}
 /* first paragraph*/
 .firstLineTitle {
   display: block;
@@ -106,6 +148,28 @@ header .collapse a:hover {
   font-size: 1.2rem;
 }
 
+/* Tablet */
+@media (max-width: 1200px) {
+  .discover-intro h2 {
+    text-align: center;
+    padding: 20px 50px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+/* Mobile */
+@media (max-width: 576px) {
+  .discover-intro h2 {
+    padding: 5px 0px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .discover-intro p {
+    text-align: justify;
+    padding: 20px 0px;
+    font-size: 1.2rem;
+  }
+}
 /* More Button */
 .more {
   border: 2px solid rgb(0, 0, 0);
@@ -146,6 +210,7 @@ header .collapse a:hover {
   margin-top: 5px;
   font-size: 1rem;
   font-weight: 600;
+  color: #01bba9;
 }
 .discover-card h3 {
   margin-top: 5px;
@@ -169,6 +234,43 @@ header .collapse a:hover {
   gap: 25px;
 }
 
+/* Tablet */
+@media (max-width: 1200px) {
+  .discover-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 0px;
+    gap: 25px;
+  }
+  .discover-card {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 500px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    transition-timing-function: ease-in;
+    transition-duration: 0.3s;
+  }
+  .discover-card h3 {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .discover-card p {
+    margin-top: 10px;
+  }
+}
+/* Mobile */
+@media (max-width: 576px) {
+  .discover-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 10px 10px;
+    gap: 25px;
+  }
+}
 /* Footer */
 .line-separate {
   border-bottom: solid 1px rgb(141, 141, 141);
@@ -274,324 +376,15 @@ footer .footer-botton .followUS .socials {
 footer .footer-botton .followUS i {
   padding-left: 80px;
   font-size: 25px;
+  color: rgb(0, 0, 0);
 }
 footer .footer-botton .followUS i:hover {
-  color: rgb(22, 206, 132);
-  transform: scale(1.04);
-}
-
-/* City Page */
-.imageHeadCity {
-  background-image: url(../img/sma-city.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-.imageHeadCity h2 {
-  color: rgb(237, 237, 237);
-  font-size: 6rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.imageHeadCity .btn-know-more {
-  color: rgb(0, 0, 0);
-  background-color: rgb(237, 237, 237);
-  padding: 8px 28px;
-  border: 2px solid rgb(237, 237, 237);
-  border-radius: 50px;
-  margin-bottom: 120px;
-  width: 250px;
-  transition-timing-function: ease-in;
-  transition-duration: 0.3s;
-}
-.imageHeadCity .btn-know-more:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgb(237, 237, 237);
-}
-
-/* Tours Page */
-.imageHeadTours {
-  background-image: url(../img/la-islita-photo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-.imageHeadTours h2 {
-  color: rgb(237, 237, 237);
-  font-size: 6rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.imageHeadTours .btn-know-more {
-  color: rgb(0, 0, 0);
-  background-color: rgb(237, 237, 237);
-  padding: 8px 28px;
-  border: 2px solid rgb(237, 237, 237);
-  border-radius: 50px;
-  margin-bottom: 120px;
-  width: 250px;
-  transition-timing-function: ease-in;
-  transition-duration: 0.3s;
-}
-.imageHeadTours:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgb(237, 237, 237);
-}
-
-/* Summer Page */
-.imageHeadSummer {
-  background-image: url(../img/quila-quina-playa.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-.imageHeadSummer h2 {
-  color: rgb(237, 237, 237);
-  font-size: 6rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.imageHeadSummer .btn-know-more {
-  color: rgb(0, 0, 0);
-  background-color: rgb(237, 237, 237);
-  padding: 8px 28px;
-  border: 2px solid rgb(237, 237, 237);
-  border-radius: 50px;
-  margin-bottom: 120px;
-  width: 250px;
-  transition-timing-function: ease-in;
-  transition-duration: 0.3s;
-}
-.imageHeadSummer .btn-know-more:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgb(237, 237, 237);
-} /* Winter Page */
-.imageHeadWinter {
-  background-image: url(../img/chapelco-big.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-.imageHeadWinter h2 {
-  color: rgb(237, 237, 237);
-  font-size: 6rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.imageHeadWinter .btn-know-more {
-  color: rgb(0, 0, 0);
-  background-color: rgb(237, 237, 237);
-  padding: 8px 28px;
-  border: 2px solid rgb(237, 237, 237);
-  border-radius: 50px;
-  margin-bottom: 120px;
-  width: 250px;
-  transition-timing-function: ease-in;
-  transition-duration: 0.3s;
-}
-.imageHeadWinter .btn-know-more:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgb(237, 237, 237);
-}
-
-.video {
-  grid-area: video-youtube;
-}
-.video iframe {
-  width: 100%;
-}
-
-.video-description {
-  grid-area: video-description;
-  align-self: center;
-  width: 80%;
-}
-
-.ski-photo {
-  grid-area: photo-ski;
-}
-.ski-photo img {
-  width: 80%;
-  border-radius: 10px;
-}
-
-.ski-description {
-  grid-area: description-ski;
-  align-self: center;
-  width: 80%;
-}
-
-.snowboard-photo {
-  grid-area: photo-snowboard;
-}
-.snowboard-photo img {
-  width: 80%;
-  border-radius: 10px;
-}
-
-.snowboard-description {
-  grid-area: description-snowboard;
-  align-self: center;
-  width: 80%;
-}
-
-.winter-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "video-description video-youtube" "photo-ski description-ski" "description-snowboard photo-snowboard";
-}
-
-.table-price {
-  margin-top: 30px;
-  padding: 40px;
-}
-
-/* Contact Us Section */
-.contactSection {
-  background-image: url(../img/san-martin-winter.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contactSection h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80vw;
-  padding-top: 150px;
-}
-.contactSection .formSection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contactSection .nameForm {
-  width: 500px;
-  height: 40px;
-  border-radius: 5px;
-  border: solid 1px rgb(64, 64, 64);
-  padding-left: 20px;
-  margin-bottom: 15px;
-}
-.contactSection .nameEmail {
-  width: 500px;
-  height: 40px;
-  border-radius: 5px;
-  border: solid 1px rgb(64, 64, 64);
-  padding-left: 20px;
-  margin-bottom: 15px;
-}
-.contactSection .namePhone {
-  width: 500px;
-  height: 40px;
-  border-radius: 5px;
-  border: solid 1px rgb(64, 64, 64);
-  padding-left: 20px;
-  margin-bottom: 15px;
-}
-.contactSection .nameText {
-  width: 500px;
-  height: 300px;
-  border-radius: 5px;
-  border: solid 1px rgb(64, 64, 64);
-  padding-left: 20px;
-  padding-top: 10px;
-  margin-bottom: 15px;
-}
-.contactSection .nameSend {
-  width: 500px;
-  height: 50px;
-  border-radius: 5px;
-  border: solid 1px rgb(64, 64, 64);
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-  font-size: 1rem;
-  transition-timing-function: ease-in;
-  transition-duration: 0.3s;
-}
-.contactSection .nameSend:hover {
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  color: #01bba9;
   transform: scale(1.04);
 }
 
 /* Tablet */
 @media (max-width: 1200px) {
-  .imageHead h2 {
-    color: rgb(237, 237, 237);
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-  }
-  .discover-intro h2 {
-    text-align: center;
-    padding: 20px 50px;
-    font-size: 2rem;
-    font-weight: 600;
-  }
-  .discover-cards-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0px 0px;
-    gap: 25px;
-  }
-  .discover-card {
-    display: flex;
-    flex-direction: column;
-    width: 270px;
-    height: 500px;
-    background-color: rgb(241, 241, 241);
-    border-radius: 20px;
-    transition-timing-function: ease-in;
-    transition-duration: 0.3s;
-  }
-  .discover-card h3 {
-    margin-top: 5px;
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-  .discover-card p {
-    margin-top: 10px;
-  }
-  .container-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   footer .footer-top {
     display: flex;
     flex-direction: column;
@@ -693,65 +486,11 @@ footer .footer-botton .followUS i:hover {
     font-size: 25px;
   }
   footer .footer-botton .followUS i:hover {
-    color: rgb(22, 206, 132);
+    color: #01bba9;
   }
 }
 /* Mobile */
 @media (max-width: 576px) {
-  .imageHead {
-    background-image: url(../img/lacar-home.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    /* height: 100vh; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .imageHead h2 {
-    color: rgb(237, 237, 237);
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-  }
-  .discover-cards-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 10px 10px;
-    gap: 25px;
-  }
-  .imageHead .btn-know-more {
-    color: rgb(0, 0, 0);
-    background-color: rgb(237, 237, 237);
-    padding: 8px 28px;
-    font-size: 1rem;
-    font-weight: 500;
-    border: 2px solid rgb(237, 237, 237);
-    border-radius: 50px;
-    margin-bottom: 120px;
-    width: 250px;
-    transition-timing-function: ease-in;
-    transition-duration: 0.3s;
-  }
-  .discover-intro h2 {
-    padding: 5px 0px;
-    font-size: 2rem;
-    font-weight: 600;
-  }
-  .discover-intro p {
-    text-align: justify;
-    padding: 20px 0px;
-    font-size: 1.2rem;
-  }
-  .container-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   footer .footer-top {
     display: flex;
     flex-direction: column;
@@ -846,8 +585,47 @@ footer .footer-botton .followUS i:hover {
     padding: 25px;
   }
   footer .footer-botton .followUS i:hover {
-    color: rgb(22, 206, 132);
+    color: #01bba9;
   }
+}
+/* City Page */
+.imageHeadCity {
+  background-image: url(../img/sma-city.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.imageHeadCity h2 {
+  color: rgb(237, 237, 237);
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.imageHeadCity .btn-know-more {
+  color: rgb(0, 0, 0);
+  background-color: rgb(237, 237, 237);
+  padding: 8px 28px;
+  border: 2px solid rgb(237, 237, 237);
+  border-radius: 50px;
+  margin-bottom: 120px;
+  width: 250px;
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+}
+.imageHeadCity .btn-know-more:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(237, 237, 237);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
   .imageHeadCity {
     background-image: url(../img/sma-city.jpeg);
     background-repeat: no-repeat;
@@ -866,6 +644,102 @@ footer .footer-botton .followUS i:hover {
     margin-bottom: 2rem;
     text-align: center;
   }
+}
+/* Tours Page */
+.imageHeadTours {
+  background-image: url(../img/la-islita-photo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.imageHeadTours h2 {
+  color: rgb(237, 237, 237);
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.imageHeadTours .btn-know-more {
+  color: rgb(0, 0, 0);
+  background-color: rgb(237, 237, 237);
+  padding: 8px 28px;
+  border: 2px solid rgb(237, 237, 237);
+  border-radius: 50px;
+  margin-bottom: 120px;
+  width: 250px;
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+}
+.imageHeadTours:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(237, 237, 237);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .imageHeadTours {
+    background-image: url(../img/la-islita-photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .imageHeadTours h2 {
+    color: rgb(237, 237, 237);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+/* Summer Page */
+.imageHeadSummer {
+  background-image: url(../img/quila-quina-playa.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.imageHeadSummer h2 {
+  color: rgb(237, 237, 237);
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.imageHeadSummer .btn-know-more {
+  color: rgb(0, 0, 0);
+  background-color: rgb(237, 237, 237);
+  padding: 8px 28px;
+  border: 2px solid rgb(237, 237, 237);
+  border-radius: 50px;
+  margin-bottom: 120px;
+  width: 250px;
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+}
+.imageHeadSummer .btn-know-more:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(237, 237, 237);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
   .imageHeadSummer {
     background-image: url(../img/quila-quina-playa.jpeg);
     background-repeat: no-repeat;
@@ -884,6 +758,45 @@ footer .footer-botton .followUS i:hover {
     margin-bottom: 2rem;
     text-align: center;
   }
+}
+/* Winter Page */
+.imageHeadWinter {
+  background-image: url(../img/chapelco-big.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.imageHeadWinter h2 {
+  color: rgb(237, 237, 237);
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.imageHeadWinter .btn-know-more {
+  color: rgb(0, 0, 0);
+  background-color: rgb(237, 237, 237);
+  padding: 8px 28px;
+  border: 2px solid rgb(237, 237, 237);
+  border-radius: 50px;
+  margin-bottom: 120px;
+  width: 250px;
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+}
+.imageHeadWinter .btn-know-more:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(237, 237, 237);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
   .imageHeadWinter {
     background-image: url(../img/chapelco-big.png);
     background-repeat: no-repeat;
@@ -902,23 +815,261 @@ footer .footer-botton .followUS i:hover {
     margin-bottom: 2rem;
     text-align: center;
   }
-  .imageHeadTours {
-    background-image: url(../img/la-islita-photo.png);
+}
+.video {
+  grid-area: video-youtube;
+}
+.video iframe {
+  width: 100%;
+}
+
+.video-description {
+  grid-area: video-description;
+  align-self: center;
+  width: 80%;
+}
+
+.ski-photo {
+  grid-area: photo-ski;
+}
+.ski-photo img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.ski-description {
+  grid-area: description-ski;
+  align-self: center;
+  width: 80%;
+}
+.ski-description h4 {
+  font-size: 1rem;
+  color: #01bba9;
+}
+
+.snowboard-photo {
+  grid-area: photo-snowboard;
+}
+.snowboard-photo img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.snowboard-description {
+  grid-area: description-snowboard;
+  align-self: center;
+  width: 80%;
+}
+.snowboard-description h4 {
+  font-size: 1rem;
+  color: #01bba9;
+}
+
+.winter-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "video-description video-youtube" "photo-ski description-ski" "description-snowboard photo-snowboard";
+}
+
+@media (max-width: 576px) {
+  .winter-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .winter-section .line-video {
+    grid-area: video-youtube;
+  }
+  .winter-section .line-video iframe {
+    width: 100%;
+  }
+  .winter-section .ski-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .winter-section .ski-description {
+    margin-top: 30px;
+  }
+  .winter-section .video-description {
+    margin-top: 30px;
+  }
+  .winter-section .snowboard-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .winter-section .snowboard-description {
+    margin-top: 30px;
+  }
+  .table-price h3 {
+    margin: 10px 0px 30px 0px;
+  }
+}
+.table-price {
+  margin-top: 30px;
+  padding: 40px;
+}
+
+/* Contact Us Section */
+.contactSection {
+  background-image: url(../img/image-contact.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactSection h2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  width: 80vw;
+  padding-top: 150px;
+  margin-left: 230px;
+}
+.contactSection .formSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 400px;
+  margin-bottom: 330px;
+}
+.contactSection .nameForm {
+  width: 500px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px rgb(64, 64, 64);
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+.contactSection .nameEmail {
+  width: 500px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px rgb(64, 64, 64);
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+.contactSection .namePhone {
+  width: 500px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px rgb(64, 64, 64);
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+.contactSection .nameText {
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+  border: solid 1px rgb(64, 64, 64);
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+.contactSection .nameSend {
+  width: 500px;
+  height: 50px;
+  border-radius: 5px;
+  border: solid 1px rgb(64, 64, 64);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  font-size: 1rem;
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+}
+.contactSection .nameSend:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.04);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .contactSection {
+    background-image: url(../img/image-contact.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
   }
-  .imageHeadTours h2 {
-    color: rgb(237, 237, 237);
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: center;
+  .contactSection h2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    width: 80vw;
+    padding-top: 150px;
+    margin-left: 0px;
+  }
+  .contactSection .formSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .contactSection .nameForm {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px rgb(64, 64, 64);
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  .contactSection .nameEmail {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px rgb(64, 64, 64);
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  .contactSection .namePhone {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px rgb(64, 64, 64);
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  .contactSection .nameText {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    border: solid 1px rgb(64, 64, 64);
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+  }
+  .contactSection .nameSend {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: solid 1px rgb(64, 64, 64);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 1rem;
+    transition-timing-function: ease-in;
+    transition-duration: 0.3s;
+  }
+  .contactSection .nameSend:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.04);
   }
 }
 

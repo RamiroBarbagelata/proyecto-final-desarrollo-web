@@ -20,6 +20,7 @@
         margin-top: 5px;
         font-size: 1rem;
         font-weight: 600;
+        color: $green-color;
     }
     h3 {
         margin-top: 5px;
@@ -42,4 +43,46 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 20px 0px;
     gap: 25px;
+}
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+    .discover-cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 0px;
+        gap: 25px;
+    }
+
+    .discover-card {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        height: 500px;
+        background-color: $card-color;
+        border-radius: 20px;
+        transition-timing-function: ease-in;
+        transition-duration: 0.3s;
+        h3 {
+            margin-top: 5px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        p {
+            margin-top: 10px;
+        }
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 576px){
+    .discover-cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 10px 10px;
+        gap: 25px;
+    }
 }

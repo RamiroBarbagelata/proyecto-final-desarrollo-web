@@ -103,9 +103,234 @@ footer {
             i {
                 padding-left: 80px;
                 font-size: 25px;
+                color: $primary-color;
                 &:hover {
                     color: $green-color;
                     transform: scale(1.04);
+                }
+            }
+        }
+    }
+}
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+    footer {
+        .footer-top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            .explore {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                h3 {
+                    display: flex;
+                    align-self: center;
+                    margin-bottom: 30px;
+                }
+                .list {
+                    display: flex;
+                    margin-left: 0px;
+                    gap: 20px;
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+        .footer-botton {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            .subscribe {
+                h3 {
+                    display: flex;
+                    align-self: center;
+                    margin-bottom: 30px;
+                }
+                .input-box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    align-self: center;
+                    gap: 10px;
+                }
+            }
+
+            .yourEmail {
+                display: block;
+                width: 250px;
+                height: 30px;
+                border-radius: 5px;
+                border: solid 1px rgb(73, 73, 73);
+                padding-left: 5px;
+            }
+
+            .suscribeButton {
+                width: 250px;
+                height: 30px;
+                border-radius: 5px;
+                border: solid 1px rgb(73, 73, 73);
+                margin-top: 10px;
+                color: $secondary-color;
+                background-color: $primary-color;
+                transition-timing-function: ease-in;
+                transition-duration: 0.3s;
+                &:hover {
+                    transform: scale(1.04);
+                    color: $primary-color;
+                    background-color: $secondary-color;
+                }
+            }
+            .input-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                align-self: center;
+                gap: 20px;
+            }
+            .followUS {
+                h3 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-self: center;
+                    padding-left: 0px;
+                }
+                .socials {
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 60px;
+                }
+                i {
+                    padding-left: 0px;
+                    font-size: 25px;
+                    &:hover {
+                        color: $green-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    footer {
+        .footer-top {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            .explore {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3 {
+                    display: flex;
+                    align-self: center;
+                    margin-bottom: 30px;
+                }
+                .list {
+                    display: flex;
+                    margin-left: 0px;
+                    gap: 20px;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+                    margin-bottom: 60px;
+                }
+            }
+            .container-contact {
+                .contact {
+                    display: flex;
+                    flex-direction: column;
+                    h3 {
+                        display: flex;
+                        align-self: center;
+                        margin-left: 0px;
+                        margin-bottom: 30px;
+                    }
+                    .info {
+                        .address {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-botton {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            padding: 40px;
+
+            .subscribe {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3 {
+                    display: flex;
+                    align-self: center;
+                }
+                .input-box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    align-self: center;
+                    gap: 20px;
+                }
+            }
+            .followUS {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                h3 {
+                    display: flex;
+                    align-self: center;
+                    padding-left: 0px;
+                }
+                .socials {
+                    display: flex;
+                    justify-content: space-evenly;
+                    gap: 0px;
+                }
+                i {
+                    padding-left: 0px;
+                    font-size: 20px;
+                    padding: 25px;
+
+                    &:hover {
+                        color: $green-color;
+                    }
                 }
             }
         }

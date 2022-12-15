@@ -32,3 +32,26 @@
         }
     }
 }
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    .imageHeadCity {
+        background-image: url(../img/sma-city.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        h2 {
+            color: $third-color;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    }
+}

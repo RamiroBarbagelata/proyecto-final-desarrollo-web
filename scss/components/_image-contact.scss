@@ -1,23 +1,28 @@
 .contactSection{
-    background-image: url(../img/san-martin-winter.jpeg);
+    background-image: url(../img/image-contact.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     h2 {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: start;
         width: 80vw;
         padding-top: 150px;
+        margin-left: 230px;
     }
     .formSection {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 400px;
+        margin-bottom: 330px;
     }
     .nameForm {
         width: 500px;
@@ -68,4 +73,85 @@
             transform: scale(1.04);
         }
     }
-} 
+}
+
+/* Mobile */
+
+@media (max-width: 576px){
+    .contactSection{
+        background-image: url(../img/image-contact.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        h2 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: start;
+            width: 80vw;
+            padding-top: 150px;
+            margin-left: 0px;
+        }
+        .formSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+        .nameForm {
+            width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            border: solid 1px $border-form;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .nameEmail {
+            width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            border: solid 1px $border-form;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .namePhone {
+            width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            border: solid 1px $border-form;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .nameText {
+            width: 300px;
+            height: 300px;
+            border-radius: 5px;
+            border: solid 1px $border-form;
+            padding-left: 20px;
+            padding-top: 10px;
+            margin-bottom: 15px;
+        }
+        .nameSend {
+            width: 300px;
+            height: 50px;
+            border-radius: 5px;
+            border: solid 1px $border-form;
+            color: $secondary-color;
+            background-color: $primary-color;
+            font-size: 1rem;
+            transition-timing-function: ease-in;
+            transition-duration: 0.3s;
+            &:hover{
+                color: $primary-color;
+                background-color: $secondary-color;
+                transform: scale(1.04);
+            }
+        }
+    }
+}
