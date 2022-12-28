@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="San Martín de los Andes tiene muchos atractivos turísticos para disfrutar de tus vacaciones en todas las estaciones del año.">
+    <meta name="description"
+        content="San Martín de los Andes tiene muchos atractivos turísticos para disfrutar de tus vacaciones en todas las estaciones del año.">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -56,7 +58,7 @@
 
     <!-- Main -->
     <main>
-        <section class="imageHead container">
+        <section class="imageHead">
             <div class="imageHead__row">
                 <h2 class="img-title text-center"><span class="firstLineTitle">EXPLORA UNA</span> ALDEA DE MONTAÑA</h2>
                 <div class="d-flex justify-content-center">
@@ -206,11 +208,11 @@
                 <h3>Explorá</h3>
                 <div>
                     <ul class="list">
-                        <li>Inicio</li>
-                        <li>Ciudad</li>
-                        <li>Paseos</li>
-                        <li>Verano</li>
-                        <li>Invierno</li>
+                        <li><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+                        <li><a class="nav-link" href="./pages/city.html">Ciudad</a></li>
+                        <li><a class="nav-link" href="./pages/tours.html">Paseos</a></li>
+                        <li><a class="nav-link" href="./pages/summer.html">Verano</a></li>
+                        <li><a class="nav-link" href="./pages/winter.html">Invierno</a></li>
                     </ul>
                 </div>
             </div>
@@ -250,7 +252,30 @@
                 <h3>Suscribité</h3>
                 <div class="input-box">
                     <input class="yourEmail" type="email" name="email" id="e_mail" placeholder="Ingresa tu email...">
-                    <input class="suscribeButton" type="submit" value="Suscribite">
+
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Suscribite
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Suscripción Newsletter</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ¡Muchas gracias por suscribirte!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 

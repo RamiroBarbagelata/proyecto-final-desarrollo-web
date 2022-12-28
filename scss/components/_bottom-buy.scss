@@ -1,0 +1,25 @@
+.buy-ticket-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .buy-ticket{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        border: 2px solid $primary-color;
+        border-radius: 50px;
+        padding: 8px 28px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        transition-timing-function: ease-in;
+        transition-duration: 0.5s;
+        &:hover {
+            background-color: $primary-color;
+            color: $secondary-color;
+            transform: scale(1.1);
+        }
+    }
+
+}
+

@@ -415,6 +415,7 @@ footer .footer-botton .followUS i:hover {
     justify-content: center;
     gap: 6px;
     margin-bottom: 60px;
+    padding-left: 0px;
   }
   footer .footer-botton {
     display: flex;
@@ -645,9 +646,127 @@ footer .footer-botton .followUS i:hover {
     text-align: center;
   }
 }
+.city-cards-horizontal .discover-city-card-left {
+  display: flex;
+  gap: 20px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.city-cards-horizontal .discover-city-card-left .card-image {
+  border-radius: 20px 0 0 20px;
+  margin-left: -12px;
+  width: 100%;
+}
+.city-cards-horizontal .discover-city-card-left .text-discover-city-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.city-cards-horizontal .discover-city-card-left .text-discover-city-card h3 {
+  display: flex;
+  align-self: start;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.city-cards-horizontal .discover-city-card-left .text-discover-city-card h4 {
+  align-self: start;
+  color: #01bba9;
+}
+.city-cards-horizontal .discover-city-card-left .text-discover-city-card p {
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .city-cards-horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .city-cards-horizontal .discover-city-card-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .city-cards-horizontal .discover-city-card-left .card-image {
+    border-radius: 20px 20px 0 0;
+    margin-left: 0px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .city-cards-horizontal .discover-city-card-left .text-discover-city-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+  .city-cards-horizontal .discover-city-card-left .text-discover-city-card h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .city-cards-horizontal .discover-city-card-left .text-discover-city-card h4 {
+    color: #01bba9;
+  }
+  .city-cards-horizontal .discover-city-card-left .text-discover-city-card p {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .city-cards-horizontal .discover-city-card-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    width: 70%;
+    padding: 0;
+  }
+  .city-cards-horizontal .discover-city-card-left .card-image {
+    border-radius: 20px 20px 0 0;
+    margin-left: 0px;
+    width: 100%;
+    height: 300px;
+  }
+  .city-cards-horizontal .discover-city-card-left .text-discover-city-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+  .city-cards-horizontal .discover-city-card-left .text-discover-city-card h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .city-cards-horizontal .discover-city-card-left .text-discover-city-card h4 {
+    color: #01bba9;
+  }
+  .city-cards-horizontal .discover-city-card-left .text-discover-city-card p {
+    margin-top: 10px;
+  }
+}
 /* Tours Page */
 .imageHeadTours {
-  background-image: url(../img/la-islita-photo.png);
+  background-image: url(../../img/la-islita-photo.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -684,7 +803,7 @@ footer .footer-botton .followUS i:hover {
 /* Mobile */
 @media (max-width: 576px) {
   .imageHeadTours {
-    background-image: url(../img/la-islita-photo.png);
+    background-image: url(../img/);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -700,6 +819,25 @@ footer .footer-botton .followUS i:hover {
     font-weight: 700;
     margin-bottom: 2rem;
     text-align: center;
+  }
+}
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+.carousel .carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel .carousel-inner img {
+    width: 50%;
+    height: 100%;
   }
 }
 /* Summer Page */
@@ -872,6 +1010,44 @@ footer .footer-botton .followUS i:hover {
   grid-template-areas: "video-description video-youtube" "photo-ski description-ski" "description-snowboard photo-snowboard";
 }
 
+@media (max-width: 1200px) {
+  .winter-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .winter-section .line-video {
+    grid-area: video-youtube;
+  }
+  .winter-section .line-video iframe {
+    width: 100%;
+  }
+  .winter-section .ski-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .winter-section .ski-description {
+    margin-top: 30px;
+  }
+  .winter-section .video-description {
+    margin-top: 30px;
+  }
+  .winter-section .snowboard-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .winter-section .snowboard-description {
+    margin-top: 30px;
+  }
+  .table-price h3 {
+    margin: 10px 0px 30px 0px;
+  }
+}
 @media (max-width: 576px) {
   .winter-section {
     display: flex;
@@ -913,6 +1089,30 @@ footer .footer-botton .followUS i:hover {
 .table-price {
   margin-top: 30px;
   padding: 40px;
+}
+
+.buy-ticket-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buy-ticket-container .buy-ticket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50px;
+  padding: 8px 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  transition-timing-function: ease-in;
+  transition-duration: 0.5s;
+}
+.buy-ticket-container .buy-ticket:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
 }
 
 /* Contact Us Section */
