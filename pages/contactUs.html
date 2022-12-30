@@ -45,10 +45,10 @@
                         <a class="nav-link" href="../pages/tours.html">Paseos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/summer.html">Verano</a>
+                        <a class="nav-link" href="../pages/winter.html">Invierno</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/winter.html">Invierno</a>
+                        <a class="nav-link" href="../pages/summer.html">Verano</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/contactUs.html">Contacto</a>
@@ -61,8 +61,9 @@
     <!-- Main -->
     <main>
         <section class="contactSection">
-            <h2>Contacto</h2>
+            <!-- <h2>Contacto</h2> -->
             <div class="formSection">
+                <h2>Contacto</h2>
                 <form action="">
                     <div><input class="nameForm" type="text" name="name" id="nameLastName"
                             placeholder="Nombre y Apellido"></div>
@@ -70,7 +71,32 @@
                     <div><input class="namePhone" type="tel" name="phone" id="yourPhone" placeholder="Teléfono"></div>
                     <div><textarea class="nameText" name="message" id="yourMessage" cols="30" rows="10"
                             placeholder="Mensaje"></textarea></div>
-                    <div><input class="nameSend" type="submit" value="Enviar Consulta"></div>
+                    <!-- <div><input class="nameSend" type="submit" value="Enviar Consulta"></div> -->
+
+                    <button type="button" class="nameSend btn btn-dark" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Enviar Consulta
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contacto</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ¡Muchas gracias, a la brevedad nos contactaremos con usted!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </form>
             </div>
 

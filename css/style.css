@@ -187,7 +187,15 @@ header .collapse a:hover {
 }
 
 /* Section Discover Home */
-.discover-card {
+.discover-cards-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px 0px;
+  gap: 25px;
+}
+.discover-cards-container .discover-card {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -197,41 +205,32 @@ header .collapse a:hover {
   transition-timing-function: ease-in;
   transition-duration: 0.3s;
 }
-.discover-card img {
+.discover-cards-container .discover-card img {
   width: 100%;
   height: 400px;
   border-radius: 20px 20px 0px 0px;
 }
-.discover-card .text-discover {
+.discover-cards-container .discover-card .text-discover {
   padding: 15px 28px;
   font-size: 1rem;
 }
-.discover-card h4 {
+.discover-cards-container .discover-card h4 {
   margin-top: 5px;
   font-size: 1rem;
   font-weight: 600;
   color: #01bba9;
 }
-.discover-card h3 {
+.discover-cards-container .discover-card h3 {
   margin-top: 5px;
   font-size: 1.4rem;
   font-weight: 600;
 }
-.discover-card p {
+.discover-cards-container .discover-card p {
   margin-top: 20px;
 }
-.discover-card:hover {
+.discover-cards-container .discover-card:hover {
   transform: scale(1.04);
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
-}
-
-.discover-cards-container {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 20px 0px;
-  gap: 25px;
 }
 
 /* Tablet */
@@ -242,7 +241,7 @@ header .collapse a:hover {
     padding: 0px 0px;
     gap: 25px;
   }
-  .discover-card {
+  .discover-cards-container .discover-card {
     display: flex;
     flex-direction: column;
     width: 270px;
@@ -252,12 +251,12 @@ header .collapse a:hover {
     transition-timing-function: ease-in;
     transition-duration: 0.3s;
   }
-  .discover-card h3 {
+  .discover-cards-container .discover-card h3 {
     margin-top: 5px;
     font-size: 1.2rem;
     font-weight: 600;
   }
-  .discover-card p {
+  .discover-cards-container .discover-card p {
     margin-top: 10px;
   }
 }
@@ -646,12 +645,44 @@ footer .footer-botton .followUS i:hover {
     text-align: center;
   }
 }
+.title-section {
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 1200px) {
+  .title-section {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .title-section {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.7rem;
+  }
+}
+.city-cards-horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .city-cards-horizontal .discover-city-card-left {
   display: flex;
   gap: 20px;
-  background-color: rgb(241, 241, 241);
+  background-color: rgba(1, 187, 168, 0.737254902);
   border-radius: 20px;
   margin-bottom: 30px;
+  transition-timing-function: ease-in;
+  transition-duration: 0.4s;
   width: 100%;
 }
 .city-cards-horizontal .discover-city-card-left .card-image {
@@ -674,10 +705,14 @@ footer .footer-botton .followUS i:hover {
 }
 .city-cards-horizontal .discover-city-card-left .text-discover-city-card h4 {
   align-self: start;
-  color: #01bba9;
+  font-weight: 500;
 }
 .city-cards-horizontal .discover-city-card-left .text-discover-city-card p {
   margin-top: 30px;
+}
+.city-cards-horizontal .discover-city-card-left:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 1200px) {
@@ -695,7 +730,7 @@ footer .footer-botton .followUS i:hover {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: rgb(241, 241, 241);
+    background-color: rgba(1, 187, 168, 0.737254902);
     border-radius: 20px;
     margin-bottom: 30px;
     width: 100%;
@@ -717,11 +752,12 @@ footer .footer-botton .followUS i:hover {
     width: 70%;
   }
   .city-cards-horizontal .discover-city-card-left .text-discover-city-card h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
   }
   .city-cards-horizontal .discover-city-card-left .text-discover-city-card h4 {
-    color: #01bba9;
+    align-self: start;
+    font-weight: 500;
   }
   .city-cards-horizontal .discover-city-card-left .text-discover-city-card p {
     margin-top: 10px;
@@ -734,7 +770,7 @@ footer .footer-botton .followUS i:hover {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: rgb(241, 241, 241);
+    background-color: rgba(1, 187, 168, 0.737254902);
     border-radius: 20px;
     margin-bottom: 30px;
     width: 70%;
@@ -754,11 +790,12 @@ footer .footer-botton .followUS i:hover {
     width: 70%;
   }
   .city-cards-horizontal .discover-city-card-left .text-discover-city-card h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
   }
   .city-cards-horizontal .discover-city-card-left .text-discover-city-card h4 {
-    color: #01bba9;
+    align-self: start;
+    font-weight: 500;
   }
   .city-cards-horizontal .discover-city-card-left .text-discover-city-card p {
     margin-top: 10px;
@@ -1095,12 +1132,13 @@ footer .footer-botton .followUS i:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .buy-ticket-container .buy-ticket {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
+  width: 400px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 50px;
   padding: 8px 28px;
@@ -1128,47 +1166,48 @@ footer .footer-botton .followUS i:hover {
   justify-content: center;
   align-items: center;
 }
-.contactSection h2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: start;
-  width: 80vw;
-  padding-top: 150px;
-  margin-left: 230px;
-}
 .contactSection .formSection {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  margin-right: 400px;
+  margin-top: 40px;
+  margin-left: 400px;
   margin-bottom: 330px;
 }
-.contactSection .nameForm {
-  width: 500px;
+.contactSection .formSection h2 {
+  width: 80vw;
+  padding-top: 150px;
+  margin-left: 0px;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.contactSection .formSection .nameForm {
+  width: 150%;
   height: 40px;
   border-radius: 5px;
   border: solid 1px rgb(64, 64, 64);
   padding-left: 20px;
   margin-bottom: 15px;
 }
-.contactSection .nameEmail {
-  width: 500px;
+.contactSection .formSection .nameEmail {
+  width: 150%;
   height: 40px;
   border-radius: 5px;
   border: solid 1px rgb(64, 64, 64);
   padding-left: 20px;
   margin-bottom: 15px;
 }
-.contactSection .namePhone {
-  width: 500px;
+.contactSection .formSection .namePhone {
+  width: 150%;
   height: 40px;
   border-radius: 5px;
   border: solid 1px rgb(64, 64, 64);
   padding-left: 20px;
   margin-bottom: 15px;
 }
-.contactSection .nameText {
-  width: 500px;
+.contactSection .formSection .nameText {
+  width: 150%;
   height: 300px;
   border-radius: 5px;
   border: solid 1px rgb(64, 64, 64);
@@ -1176,8 +1215,8 @@ footer .footer-botton .followUS i:hover {
   padding-top: 10px;
   margin-bottom: 15px;
 }
-.contactSection .nameSend {
-  width: 500px;
+.contactSection .formSection .nameSend {
+  width: 150%;
   height: 50px;
   border-radius: 5px;
   border: solid 1px rgb(64, 64, 64);
@@ -1187,7 +1226,7 @@ footer .footer-botton .followUS i:hover {
   transition-timing-function: ease-in;
   transition-duration: 0.3s;
 }
-.contactSection .nameSend:hover {
+.contactSection .formSection .nameSend:hover {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   transform: scale(1.04);
@@ -1199,55 +1238,56 @@ footer .footer-botton .followUS i:hover {
     background-image: url(../img/image-contact.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-  }
-  .contactSection h2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: start;
-    width: 80vw;
-    padding-top: 150px;
-    margin-left: 0px;
   }
   .contactSection .formSection {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 0px;
-    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-bottom: 100px;
+    margin-top: 40px;
   }
-  .contactSection .nameForm {
-    width: 300px;
+  .contactSection .formSection h2 {
+    width: 80vw;
+    padding-top: 100px;
+    margin-left: 100px;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .contactSection .formSection .nameForm {
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     border: solid 1px rgb(64, 64, 64);
     padding-left: 20px;
     margin-bottom: 15px;
   }
-  .contactSection .nameEmail {
-    width: 300px;
+  .contactSection .formSection .nameEmail {
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     border: solid 1px rgb(64, 64, 64);
     padding-left: 20px;
     margin-bottom: 15px;
   }
-  .contactSection .namePhone {
-    width: 300px;
+  .contactSection .formSection .namePhone {
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     border: solid 1px rgb(64, 64, 64);
     padding-left: 20px;
     margin-bottom: 15px;
   }
-  .contactSection .nameText {
-    width: 300px;
+  .contactSection .formSection .nameText {
+    width: 100%;
     height: 300px;
     border-radius: 5px;
     border: solid 1px rgb(64, 64, 64);
@@ -1255,8 +1295,8 @@ footer .footer-botton .followUS i:hover {
     padding-top: 10px;
     margin-bottom: 15px;
   }
-  .contactSection .nameSend {
-    width: 300px;
+  .contactSection .formSection .nameSend {
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     border: solid 1px rgb(64, 64, 64);
@@ -1266,7 +1306,7 @@ footer .footer-botton .followUS i:hover {
     transition-timing-function: ease-in;
     transition-duration: 0.3s;
   }
-  .contactSection .nameSend:hover {
+  .contactSection .formSection .nameSend:hover {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     transform: scale(1.04);

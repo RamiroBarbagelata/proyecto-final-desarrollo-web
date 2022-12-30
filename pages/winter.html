@@ -45,10 +45,10 @@
                         <a class="nav-link" href="../pages/tours.html">Paseos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/summer.html">Verano</a>
+                        <a class="nav-link" href="../pages/winter.html">Invierno</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/winter.html">Invierno</a>
+                        <a class="nav-link" href="../pages/summer.html">Verano</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/contactUs.html">Contacto</a>
@@ -174,8 +174,31 @@
             </div>
         </div>
 
-        <div class="buy-ticket-container">
+        <!-- <div class="buy-ticket-container">
             <span class="buy-ticket"> Comprar Ahora > </span>
+        </div> -->
+
+        <button type="button" class="buy-ticket-container btn btn-dark mx-auto" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Comprar Ahora
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Tickek de Compra</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ¡Muchas gracias por su compra!
+                        Recibirá un correo electrónico con su pase para el medio de elevación.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>

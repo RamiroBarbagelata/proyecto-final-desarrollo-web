@@ -1,10 +1,17 @@
 .city-cards-horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     .discover-city-card-left {
         display: flex;
         gap: 20px;
-        background-color: $card-color;
+        background-color: $green-color-alpha;
         border-radius: 20px;
         margin-bottom: 30px;
+        transition-timing-function: ease-in;
+        transition-duration: 0.4s;
         width: 100%;
         .card-image {
             border-radius: 20px 0 0 20px;
@@ -25,11 +32,15 @@
             }
             h4 {
                 align-self: start;
-                color: $green-color;
+                font-weight: 500;
             }
             p {
                 margin-top: 30px;
             }
+        }
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
         }
     }
 }
@@ -48,7 +59,7 @@
             justify-content: center;
             align-items: center;
             gap: 20px;
-            background-color: $card-color;
+            background-color: $green-color-alpha;
             border-radius: 20px;
             margin-bottom: 30px;
             width: 100%;
@@ -59,7 +70,7 @@
                 margin-left: 0px;
                 width: 100%;
                 padding: 0;
-            margin: 0;
+                margin: 0;
             }
             .text-discover-city-card {
                 display: flex;
@@ -68,11 +79,12 @@
                 align-items: center;
                 width: 70%;
                 h3 {
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                     font-weight: 600;
                 }
                 h4 {
-                    color: $green-color;
+                    align-self: start;
+                    font-weight: 500;
                 }
                 p {
                     margin-top: 10px;
@@ -90,7 +102,7 @@
             justify-content: center;
             align-items: center;
             gap: 20px;
-            background-color: $card-color;
+            background-color: $green-color-alpha;
             border-radius: 20px;
             margin-bottom: 30px;
             width: 70%;
@@ -108,11 +120,12 @@
                 align-items: center;
                 width: 70%;
                 h3 {
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                     font-weight: 600;
                 }
                 h4 {
-                    color: $green-color;
+                    align-self: start;
+                    font-weight: 500;
                 }
                 p {
                     margin-top: 10px;
